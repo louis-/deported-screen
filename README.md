@@ -10,15 +10,3 @@ Embedded Artists 2.7 inch E-paper Display
  
 HC-06 Bluetooth to UART converter
  see http://mcuoneclipse.com/2013/06/19/using-the-hc-06-bluetooth-module/
-
-+----------------+                         
-| HC06 Bluetooth |                         
-|                |                         
-+--+-------------+                         
-   |                                       
-+--+-------------+    +-------------------+
-|                |    |                   |
-|   FRDM KL25z   +----+  E-paper Display  |
-|                |    |                   |
-|                |    |                   |
-+----------------+    +-------------------+
