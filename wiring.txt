@@ -1,1 +1,69 @@
+FRDM KL25Z <-> Embedded Artists 2.7 inch E-paper Display Module
+###############################################################
+Display				FRDM KL25Z
+GND			1		GND		GND (J9 14)
+3V3			2		VOUT	P3V3 (J9 08)
+SCK			3		SCK		PTD1/SPI0_SCK (J2 12) (où est PTD0/SPI0_PCS0 !?)
+MOSI		4		MOSI	PTD2/SPI0_MOSI (J2 08)
+MISO		5		MISO	PTD3/SPI0_MISO (J2 10)
+SSEL		6		GPIO	PTC17 (J2 07)
+Busy		7		GPIO	PTA16 (J2 09)
+Border		8		GPIO	PTD6 (J2 17)
+SCL			9		SCL		PTE1/I2C1_SCL (J2 18)
+SDA			10		SDA		PTE0/I2C1_SDA (J2 20)
+PWM			11		PWM		PTD4 (J1 06)
+Reset		12		GPIO	PTA17 (J2 11)
+PowerCtl	13		GPIO	PTD7 (J2 19)
+Discharge	14		GPIO	PTE31 (J2 13)
 
+J1	or		oo	J10
+	oo		oo
+	Xo		oo
+	oo		oo
+	oo		oo
+	oo		ro
+	oo		
+	oo		oo	J9
+			oX
+J2	or		oo
+	oo		oo
+	oo		oX
+	XX		oo
+	XX		oo
+	XX		ro
+	oX
+	oo
+	XX
+	XX
+
+legend: o=free pin, X=connected pin, r=pin #1
+
+FRDM KL25Z <-> HC06 bluetooth
+#############################
+HC06				FRDM KL25Z
+RXD					GPIO	    PTE22 (J10 5)
+TXD                 GPIO	    PTE23 (J10 7)
+GND                 GND         GND (J9 12)
+VCC                 5V USB OUT  5V USB OUT (J9 10)
+
+J1	or		oo	J10
+	oo		oo
+	oo		Xo
+	oo		Xo
+	oo		oo
+	oo		ro
+	oo		
+	oo		oo	J9
+			oo
+J2	or		oX
+	oo		oX
+	oo		oo
+	oo		oo
+	oo		oo
+	oo		ro
+	oo
+	oo
+	oo
+	oo
+
+legend: o=free pin, X=connected pin, r=pin #1
